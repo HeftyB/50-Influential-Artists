@@ -1,4 +1,212 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+@keyframes blink {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  margin: 3%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 170%;
+  color: gray;
+  padding: 0% 1%;
+}
+header nav a:first-child {
+  font-weight: bold;
+}
+header nav a:nth-child(2) {
+  border: 1px solid black;
+  border-style: none solid none solid;
+}
+.wrapper {
+  margin: 0% 5%;
+}
+.wrapper .title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 3.5%;
+  background-image: url("/assets/home.png");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.wrapper .title-container p {
+  font-size: 325%;
+  color: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+.wrapper .title-container .myButton {
+  display: flex;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 39px;
+  text-decoration: none;
+  margin: 2% 0%;
+}
+.wrapper .title-container .myButton:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.wrapper .title-container .myButton:active {
+  position: relative;
+  top: 1px;
+}
+.wrapper .artists-container {
+  margin: 2% 0%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 700px) {
+  .wrapper .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.wrapper .artists-container .artist {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .wrapper .artists-container .artist {
+    margin: 2% 0%;
+  }
+}
+.wrapper .artists-container .artist img {
+  width: 350px;
+  height: 290px;
+  border-radius: 5px;
+}
+.wrapper .artists-container .artist img:hover {
+  opacity: 0.8;
+}
+.wrapper .artists-container .artist .bio {
+  font-size: 80%;
+}
+.wrapper .artists-container .artist a {
+  font-size: 120%;
+  text-decoration: none;
+  color: black;
+  padding: 3% 0%;
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8-VQ.ttf) format('truetype');
+}

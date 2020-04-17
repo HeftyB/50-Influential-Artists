@@ -1,0 +1,91 @@
+.wrapper {
+    margin: 0% 5%;
+
+    .title-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 3.5%;
+        background-image: url("/assets/home.png");
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+
+        p {
+            font-size: 325%;
+            color: whitesmoke;
+            font-family: @font;
+            font-weight: bold;
+
+            .animation (blink, 1.5s, infinite);
+        }
+        
+
+        .myButton {
+
+            .butt(Arial, bold);
+        }
+
+
+        .myButton:hover {
+            background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+            background-color:#e9e9e9;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+        
+                
+
+        
+    }
+
+
+    .artists-container {
+        margin: 2% 0%;
+        display: flex;
+        justify-content: space-around;
+
+        @media @mobile {
+            .mobile();
+        }
+        
+
+        .artist {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media @mobile {
+                margin: 2% 0%;
+            }
+
+            img {
+                width: 350px;
+                height: 290px;
+                border-radius: 5px;
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+
+            .bio {
+                font-size: 80%;
+            }
+
+            a {
+                font-size: 120%;
+                text-decoration: none;
+                color: black;
+                padding: 3% 0%;
+            }
+        }
+    }
+
+
+
+}
+
