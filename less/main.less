@@ -45,6 +45,10 @@
         margin: 2% 0%;
         display: flex;
         justify-content: space-around;
+
+        @media @mobile {
+            .mobile();
+        }
         
 
         .artist {
@@ -53,10 +57,17 @@
             flex-direction: column;
             align-items: center;
 
+            @media @mobile {
+                margin: 2% 0%;
+            }
+
             img {
                 width: 350px;
                 height: 290px;
                 border-radius: 5px;
+                &:hover{
+                    opacity: 0.8;
+                }
             }
 
             .bio {

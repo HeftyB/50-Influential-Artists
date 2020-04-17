@@ -156,16 +156,32 @@ header nav a:nth-child(2) {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 700px) {
+  .wrapper .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .wrapper .artists-container .artist {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 700px) {
+  .wrapper .artists-container .artist {
+    margin: 2% 0%;
+  }
+}
 .wrapper .artists-container .artist img {
   width: 350px;
   height: 290px;
   border-radius: 5px;
+}
+.wrapper .artists-container .artist img:hover {
+  opacity: 0.8;
 }
 .wrapper .artists-container .artist .bio {
   font-size: 80%;
