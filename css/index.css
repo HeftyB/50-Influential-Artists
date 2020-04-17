@@ -1,3 +1,11 @@
+@keyframes blink {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
 html,
 body,
 div,
@@ -126,6 +134,9 @@ header nav a:nth-child(2) {
   color: whitesmoke;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
 .wrapper .title-container .myButton {
   display: flex;
